@@ -99,7 +99,7 @@ struct solve {
     template <Expr E>
     using is_solution = std::bool_constant<E::evaluated::as_double == Goal>;
    public:
-    using value = flatten<map<permute<make_list_nt<1, 2, 3>>::value, expressions>::value>::value::filter<is_solution>;
+    using value = typename flatten<typename map<typename permute<Cards>::value, expressions>::value>::value::filter<is_solution>;
 };
 
 int main() {
