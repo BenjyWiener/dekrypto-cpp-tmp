@@ -26,4 +26,4 @@ Input is provided via two text files in the subdirectory `input/` that are `#inc
 
 Compile the program with your favorite C++20 compliant compiler, and run the program to print out the solutions.
 Note: Although the program technically supports any non-zero number of cards, anything more than 3 will take a while and probably require additional compiler flags
-to increase the maximum template instantiation depth.
+to increase the maximum template instantiation depth. And then it'll probably crash your compiler.
